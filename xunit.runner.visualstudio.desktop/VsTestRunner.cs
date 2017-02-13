@@ -184,7 +184,7 @@ namespace Xunit.Runner.VisualStudio.TestAdapter
                         var assembly = new XunitProjectAssembly { AssemblyFilename = assemblyFileName };
                         var configuration = LoadConfiguration(assemblyFileName);
                         var fileName = Path.GetFileNameWithoutExtension(assemblyFileName);
-                        var shadowCopy = configuration.ShadowCopyOrDefault;
+                        var shadowCopy = false; //configuration.ShadowCopyOrDefault;
 
                         try
                         {
