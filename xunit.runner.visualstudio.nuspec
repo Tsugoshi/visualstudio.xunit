@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata minClientVersion="2.12">
-    <id>xunit.runner.visualstudio</id>
+    <id>xunit.runner.axocover</id>
     <version>99.99.99-dev</version>
-    <title>xUnit.net [Runner: Visual Studio]</title>
-    <authors>James Newkirk, Brad Wilson</authors>
-    <description>Visual Studio 2012+ Test Explorer runner for the xUnit.net framework. Capable of running xUnit.net v1.9.2 and v2.0+ tests.
+    <title>xUnit.net [Runner: AxoCover]</title>
+    <authors>Péter Major</authors>
+    <description>AxoCover Test Explorer runner for the xUnit.net framework. Capable of running xUnit.net v1.9.2 and v2.0+ tests.
 
 Supported platforms:
 - Desktop .NET 2.0+

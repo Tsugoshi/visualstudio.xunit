@@ -1,8 +1,10 @@
 param(
-    [string]$target = "Test",
+    [string]$target = "CI",
     [string]$verbosity = "minimal",
     [int]$maxCpuCount = 0
 )
+$env:BuildAssemblyVersion = "1.0.0.0"
+$env:BuildSemanticVersion = "1.0.0.0"
 
 $msbuilds = @(get-command msbuild -ea SilentlyContinue)
 if ($msbuilds.Count -gt 0) {
