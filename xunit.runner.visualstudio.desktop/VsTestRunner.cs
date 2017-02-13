@@ -430,7 +430,7 @@ namespace Xunit.Runner.VisualStudio.TestAdapter
             var assembly = new XunitProjectAssembly { AssemblyFilename = runInfo.AssemblyFileName };
             var assemblyFileName = runInfo.AssemblyFileName;
             var assemblyDisplayName = Path.GetFileNameWithoutExtension(assemblyFileName);
-            var shadowCopy = assembly.Configuration.ShadowCopyOrDefault;
+            var shadowCopy = false; //assembly.Configuration.ShadowCopyOrDefault;
 
             var appDomain = assembly.Configuration.AppDomain ?? AppDomainDefaultBehavior;
             var longRunningSeconds = assembly.Configuration.LongRunningTestSecondsOrDefault;
